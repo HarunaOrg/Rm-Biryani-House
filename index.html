@@ -211,30 +211,17 @@
           <h1 class="container-h1">Menu</h1>
           <div class="row">
               </style>
-                  <!-- Nav pills -->
                   <ul class="nav nav-pills" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" data-toggle="pill" href="#breakfast">Appetizers</a>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" aria-current="page" data-toggle="pill" role="pill" aria-controls="breakfast" href="#breakfast">Appetizers</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="pill" aria-current="page" href="#main">Main Course</a>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" data-toggle="pill" aria-controls="main" role="pill" href="#main">Main Course</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" data-toggle="pill" href="#biryani">Biryani</a>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-controls="biryani" role="pill" data-toggle="pill" href="#biryani">Biryani</a>
                     </li>
                   </ul>
-                  
- <script>
-	 $(document).ready(function () {
-             //Fix Bootstrap bug with Tab control not removing active class when switching tabs
-              $(".nav-tabs li.nav-item a.nav-link").click(function () {
-                        $(".nav-tabs li.nav-item a.nav-link").removeClass('active').off('click');
-                   });
-          });
-	 $(".nav-pills .nav-item .nav-link:not(.nav-pills .nav-item.dropdown .nav-link), .dropdown-item").click(function()
-                    {
-                        $(".dropdown-item.active").removeClass('active');
-                    });</script>
 
                   <!-- Tab panes -->
                   <div class="tab-content slideanim">
